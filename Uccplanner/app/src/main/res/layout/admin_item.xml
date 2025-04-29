@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adminCard"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/event"/>
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/card_image"
+            android:text="Title"
+            android:textColor="@color/greenJoinBtnColor"
+            android:textSize="20sp"
+            android:ellipsize="marquee"
+            android:maxLines="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/day"
+            android:textColor="@android:color/darker_gray"
+            android:layout_toEndOf="@+id/line"
+            android:layout_marginTop="25dp"
+
+            android:text="25"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/month"
+            android:textColor="@android:color/darker_gray"
+            android:layout_toEndOf="@+id/line"
+            android:layout_marginTop="55dp"
+            android:text="April"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="70dp"
+
+            android:background="@android:color/darker_gray"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/line"
+            android:orientation="vertical" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
